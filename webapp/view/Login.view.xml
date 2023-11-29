@@ -1,0 +1,30 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="login.controller.Login"
+  displayBlock="true"
+>
+  <App>
+    <Page title="Login_Page">
+      <VBox class="sapUiContentPadding">
+        <Label text="Username" />
+        <Input id="usernameInput" />
+        <Label text="Password" />
+        <Input id="passwordInput" type="Password" />
+        <Button text="Login" press="onLoginPress" />
+        <Button text="Register" press="onRegisterPress" />
+      </VBox>
+    </Page>
+  </App>
+
+  <Dialog id="registrationDialog" title="Register">
+    <VBox>
+      <Label text="Username" />
+      <Input id="registerUsernameInput" />
+      <Label text="Password" />
+      <Input id="registerPasswordInput" type="Password" />
+      <Button text="Register" press="onRegisterSubmit" />
+      <Button text="Cancel" press="onRegisterCancel" />
+    </VBox>
+  </Dialog>
+</mvc:View>
